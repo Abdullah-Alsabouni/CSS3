@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name = "viewport" content="width = device-with, inial-scale = 1.0" />
+        <title>Basic Selectors</title>
+        
+    <style>
+    
+    /* Tüm h1'leri seç */
+   /* h1 {
+        color: aquamarine;
+        background: blueviolet;
+    } */
+     /*Tüm p'leri seç */
+   /* p {
+        color: aquamarine ;
+        background: blueviolet;
+    }  */
+
+  /*ikisini aynı blokta seç  */ /* h1,p { 
+        color: aquamarine;
+        background: blueviolet;
+    } */
+
+   /* id' si logo olan h1 */ /* #logo { 
+        color: brown;
+        background: rebeccapurple;
+    } */
+       
+   /* info olan class'ın paragrafı *//* .info { 
+
+        color: red;
+        background: blue;
+    } */
+
+   /* #logo, .lead {
+        color: yellowgreen;
+        background: gray;
+    } */
+
+  /*id'si para1 ve class'ı lead olna p *//*  #para1.lead  {
+        color: red;
+        background: blue;
+
+    } */
+
+  /* a etiketlerinin altındaki çizgiyi kaldır */ /*  a {
+        text-decoration: none; 
+    } */
+
+ /* ul'nin içindeki li'nin içindeki a'ya işlem yap*//*   ul li a {
+        text-decoration: none;
+    } */
+
+ /*info class'ındaki span'ları çek*//*  .info span {
+        color: red;
+    }*/
+    /*.info .primary{
+        color: red;
+    }*/
+
+    * { /* tüm elemanlara işlem yap*/
+        font-size: 20px;
+    }
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header 1</h1>
+            <h1 id = "logo">Logo</h1>
+
+            <ul>
+                <li>
+                    <a href = "#">Content</a>
+                </li>
+                <li><a href = "#">Services</a></li>
+            </ul>
+        </header>
+        <h1>
+            Header 2 
+        </h1>
+        <p id = "para1"  class = "lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sed omnis iusto consectetur facilis! Voluptas dolore optio neque possimus laboriosam? Obcaecati rerum eos necessitatibus, odit iste libero debitis dicta voluptatem?
+        </p>
+        <p  class="info">
+            Lorem ipsum <span class = "primary"> dolor</span> sit amet, consectetur adipisicing elit. Quibusdam, quam ducimus. Maxime expedita ad eos incidunt unde? Facere, laudantium provident aspernatur repellendus quas odit eligendi officiis, magni ab animi unde?
+        </p>
+        <p class = "info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ex sequi fuga tempore quod illo ratione, obcaecati quasi facere ipsa, maxime saepe atque ullam similique hic blanditiis deleniti, quam architecto.
+        </p>
+        <p>Test Paragraph</p>
+        
+        <a href = "#">Home</a>
+    </body>
+</html>
