@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name = "viewport" content="width = device-with, inial-scale = 1.0" />
+        <title>Padding</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box; /*kutunun boyutu border'a kadar alan kapsar, box-sizing'in tipi tanımlanmazsa boyutlar content olarak tanımlanır*/
+            }
+
+            div.box-1 {
+                width: 360px; /*width = 5*2(border) + 30*2(border) + content(box-sizing'in tipi tanımlanırsa*/
+                height: 250px;
+                border: 5px solid blue;
+                padding: 30px;
+              /*padding: content ile border arasındaki alanı temsil eder*/
+               /*
+   1.Kullanım   padding-left: 25px;
+                padding-right: 25px;
+                padding-bottom: 25px;
+                padding-top: 25px;*/
+                /* top right bottom left*/
+                /*2.kullanım padding: 25px 25px 25px 25px;*/
+                /*3.kullanım padding: 25px */
+                /*4.kullanım top-buttom left-rigth*/
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class = "box-1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate explicabo minima totam, facilis nulla deleniti nemo nobis dolorum placeat impedit, quaerat eius illo et quia veritatis, nihil aperiam fugiat doloremque!
+        </div>
+    </body>
+</html>
