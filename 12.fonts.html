@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-with, inial-scale = 1.0" />
+    <title>fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+     html {
+          font-size: 10px;
+        }
+    h1 {
+        font-family: Arial, Helvetica, sans-serif; /* sınıf tipleri*/
+    }
+    p {
+        font-size: 2rem; /*2rem : root elementini 2 katı, 2em p elementinin 2 katı */
+        font-style: italic;
+        font-weight: bold; 
+    }
+    p span { /* tüm font-size'lar user agent stylesheet tarafınan otomatik olarak 16px ayarlanıyor*/
+        font-size: 50%;/*p span'nin font-size'ı 16px => 8px*/
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1>Başlık 1</h1>
+    <p>Lorem ipsum <span>dolor</span> sit amet, consectetur adipisicing elit. Delectus, mollitia omnis debitis odio quos similique
+        ipsum quae optio, vel aspernatur recusandae porro tempore neque necessitatibus officia, atque facilis voluptatum
+        consequuntur.</p>
+</body>
+
+</html>
