@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-with, inial-scale = 1.0" />
+    <title>Nth-Child-Selector</title>
+
+    <style>
+        p {
+            font-size: 1.5em;
+        }
+
+        ul {
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+      /* n = 0 b = 0 ==> 2n =  0, 2, 4, 6, 8*/
+      /*2.4.6.8. child'lar */
+        ul li:nth-child(2n) {
+           color: tan;
+        }
+
+        /*1.çocuk*/
+        /* p:first-child {
+                background: blue; 
+            }
+            p:nth-child(1) /*1.çocuk*/
+        /*   {
+                color: aqua;
+            }
+            p:nth-child(4)
+            {
+                color: green;
+            }*/
+        /*      p:nth-child(even) {
+                color: yellow;
+            }  
+            p:nth-child(odd) {
+                color: red;
+            }*/
+        /* an + b    n = 0,b = 0*/
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+
+    <!--  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corrupti praesentium iusto laudantium voluptatum, eum minima nobis obcaecati. Error ratione recusandae magnam magni possimus molestias odio dolor provident saepe qui.
+   </p>
+   <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo veniam ducimus dolore et necessitatibus tempora sit similique quasi ut, odio commodi maiores, eius, quaerat aut vero voluptas itaque distinctio.
+   </p>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore nam voluptatem rerum eius dolorem! Ullam nobis magni aliquam sint, numquam quos dolor quis beatae recusandae, modi minima qui libero!
+   </p>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore similique autem quisquam, repudiandae vitae ab. Voluptate, doloremque corrupti, autem et, facilis natus est tenetur pariatur voluptatum hic fuga qui reiciendis!
+   </p>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus delectus blanditiis doloremque, optio enim voluptas reprehenderit saepe impedit doloribus deserunt deleniti vel suscipit iste, necessitatibus rem minus provident facere.
+   </p> -->
+</body>
+
+</html>
