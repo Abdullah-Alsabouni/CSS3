@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="device-with, inial-scale = 1.0" />
+    <title>Css position</title>
+    <style>
+        span {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            background-color: red;
+            position: relative; /*alan 75px sağda görünse bile tarayıcı alanının pozisyonunu ilk haliyle alan kapsar*/
+            left: 75px;
+            z-index: -1;
+        }
+        /*   .outer-box {
+            width: 200px;
+            height: 200px;
+            background-color: #a7a7a7;
+            position: relative; /*parent alanının pozisyonuna statik veya özellik verilmediğinde child alanı body alanına göre davranır */
+        /*   }
+        .inner-box {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;/*absolute: Alanın her köşesi (0, 0) olarak tanımlanır*/
+        /*  top: 10px;
+            left: 10px;
+        }*/
+        /*  .red {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative; /* Elementin bulunduğu yerden pozisyonunu değiştirmemizi sağlar */
+        /*  top: 20px;
+                left: 20px; 
+                z-index: 2;/*Elementler üst üste gelince z-index'i daha büyük olan element üstte görünecek*/
+        /*   }
+            .blue {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: relative;
+                left: 5px;
+                top: 5px;
+                z-index: 1;
+            }*/
+        /*      .fixed-topbar {
+                width: 50%;
+                padding: 20px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                position: fixed;
+                bottom: 20px;
+            }*/
+    </style>
+</head>
+
+<body>
+    <span></span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad unde dolor pariatur repellat debitis, accusamus perferendis ut sint qui, magnam suscipit deserunt possimus eos exercitationem architecto! Ipsum, eum totam.
+  <!--  <div class="outer-box">
+        <div class="inner-box"></div>
+    </div> -->
+    <!--  <div class="red"></div>
+    <div class="blue"></div> -->
+</body>
+
+</html>
