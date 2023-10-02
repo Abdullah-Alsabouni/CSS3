@@ -15,13 +15,16 @@
         width: 75%;
         margin: 0 auto;
         display: flex;
-        flex-direction: row;
-        height: 600px;
+        flex-direction: column; /*dikey olarak sırala*/
+        flex-wrap: wrap; /*İçerik tek satırda sığmazsa alttaki satıra geç*/
+        justify-content: space-around;  /*flex-direction: özelliğine göre bu işlemi uygula*/
+        align-items: center; /*align-items: elemanları hizala*/
+        min-height: 600px; /*İçerik 600px'i aşarsa büyüt*/
         background: black;
        }
        .box {
         text-align: center;
-        background: white;
+        background: #f2f2f2;
         width: 200px;
         border: 1px solid black ;
        }
@@ -29,7 +32,7 @@
 </head>
 <body>
     <!-- Flex Container -->
-    <div class="Container">
+    <div class="container">
         <div class="box">
             <h1>Article1</h1>
             <p>Lorem ipsum dolor sit amet.</p>
