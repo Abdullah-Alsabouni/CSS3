@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-with, inial-scale = 1.0" />
+        <title>Css - Flexbox2</title>
+        <style>
+ * { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+   .container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 600px;
+    background: black;
+   }
+   .box {
+    text-align: center;
+    background: #f2f2f2;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+   }
+   .box1 {
+   /* order: 3;*/
+    background: red;
+    flex-grow: 1; /*flex-grow'ların toplamı 6 ==> 6 da 1'ini alan kapsar*/
+   }
+   .box2 {
+  /*  order: 1; */
+    background: green;
+    flex-grow: 2;
+   }
+   .box3 {
+  /*  order: 2; *//*order: içeriğin elemanlarını özel olarak sıralar*/
+    background: blue;
+    flex-grow: 3;
+   }
+        </style>
+    </head>
+    <body>
+        <!-- Flex Container -->
+        <div class="container">
+            <div class = "box box1"></div>
+            <div class = "box box2"></div>
+            <div class = "box box3"></div>
+        </div>
+
+    </body>
+</html>
